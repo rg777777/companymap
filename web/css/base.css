@@ -1,0 +1,17 @@
+#registration_user label {
+width: 130px;
+
+}
+#registration_user input {
+margin-bottom: 15px;
+
+}
+
+#registration {
+	margin: 0 auto;
+  width: 50%;
+}
+
+.show-grid {
+  margin-bottom: 15px;
+}

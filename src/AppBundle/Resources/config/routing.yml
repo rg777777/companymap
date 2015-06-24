@@ -1,0 +1,95 @@
+admin:
+    path:     /
+    defaults: { _controller: AppBundle:DefaultController:home }
+
+admin:
+    path:     /admin
+    defaults: { _controller: AppBundle:DefaultController:admin }
+
+account_register:
+    path:     /register
+    defaults: { _controller: AppBundle:Account:register }
+
+account_create:
+    path:     /register/create
+    defaults: { _controller: AppBundle:Account:create }
+
+account_success:
+    path:     /register/success
+    defaults: { _controller: AppBundle:Account:success }
+
+
+company_index:
+    path:     /company/index
+    defaults: { _controller: AppBundle:Company:index }
+
+company_add:
+    path:     /company/add
+    defaults: { _controller: AppBundle:Company:add }
+
+company_create:
+    path:     /company/register/create
+    defaults: { _controller: AppBundle:Company:create }
+
+company_remove:
+    path:     /company/remove/{id}
+    defaults: { _controller: AppBundle:Company:remove }
+
+company_edit:
+    path:     /company/edit/{id}
+    defaults: { _controller: AppBundle:Company:edit }
+
+
+company_onmap:
+    path:     /CompanyOnMap/{compid}
+    defaults: { _controller: AppBundle:Company:CompanyOnMap }
+
+
+
+staff_add:
+    path:     /staff/add/{compid}
+    defaults: { _controller: AppBundle:Staff:add }
+
+staff_view:
+    path:     /staff/view/{compid}
+    defaults: { _controller: AppBundle:Staff:view }
+
+staff_remove:
+    path:     /staff/remove/{compid}/{staffid}
+    defaults: { _controller: AppBundle:Staff:remove }
+
+staff_edit:
+    path:     /staff/edit/{compid}/{staffid}
+    defaults: { _controller: AppBundle:Staff:edit }
+
+login_success:
+    path:     /success
+    defaults: { _controller: AppBundle:Account:success }
+
+login_route:
+    path:     /login
+    defaults: { _controller: AppBundle:Security:login }
+
+login_check:
+    path:     /login_check
+    defaults: { _controller: AppBundle:Security:loginCheck }
+
+
+country_index:
+    path:     /country
+    defaults: { _controller: AppBundle:Country:index }
+
+country_add:
+    path:     /country/add
+    defaults: { _controller: AppBundle:Country:add }
+
+country_remove:
+    path:     /staff/remove/{countid}
+    defaults: { _controller: AppBundle:Country:remove }
+
+country_edit:
+    path:     /staff/edit/{countid}
+    defaults: { _controller: AppBundle:Country:edit }
+
+logout:
+    pattern:   /logout
